@@ -92,8 +92,6 @@ data.head()
 
 
 from sklearn.model_selection import train_test_split
-tvtrain,tvtest,satrain,satest = train_test_split(tv,sa,test_size=0.2)
-
 
 # In[105]:
 
@@ -105,6 +103,7 @@ ne = data[['newspaper']]
 tv_mean = tv.mean()
 ne_mean = ne.mean()
 sa_mean = sa.mean()
+tvtrain,tvtest,satrain,satest = train_test_split(tv,sa,test_size=0.2)
 #drop() is to drop a data set
 
 
